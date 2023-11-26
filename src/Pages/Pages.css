@@ -1,0 +1,18 @@
+.container-pages {
+    position: relative;
+    background: white;
+    max-width: 1000px;
+    margin: 2em auto;
+    z-index: 90;
+    padding: 2rem;
+    box-shadow: 1px 0px 70px 25px rgba(100,29,143,0.78);
+    -webkit-box-shadow: 1px 0px 70px 25px rgba(100,29,143,0.78);
+    -moz-box-shadow: 1px 0px 70px 25px rgba(100,29,143,0.78);
+    border: #670083 solid 1px;
+
+
+}
+
+pre {
+    padding: 0.5rem;
+}

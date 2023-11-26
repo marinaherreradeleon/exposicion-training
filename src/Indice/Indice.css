@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.relative-wrapper {
+    position: relative;
+}
+
+.indice {
+    border: #670083 solid 1px;
+    background: linear-gradient(to bottom right, rgb(21 8 26) 0%, rgb(58 14 103) 35%, rgb(40 9 75) 65%, rgb(21 8 26) 100%);
+    background-size: 400% 400%;
+    max-width: 900px;
+    padding: 5rem 8rem;
+    border-radius: 8px;
+    box-shadow: 1px 0px 70px 25px rgba(100,29,143,0.78);
+    -webkit-box-shadow: 1px 0px 70px 25px rgba(100,29,143,0.78);
+    -moz-box-shadow: 1px 0px 70px 25px rgba(100,29,143,0.78);
+    animation: fondo-lava 5s ease infinite;
+}
+
+
+.indice h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+
+.indice ul {
+    list-style: none;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.indice a {
+    text-decoration: none;
+    color:#feffd6;
+    transition: text-shadow 0.17s linear;
+}
+
+.indice a:hover {
+    text-shadow: 1px -1px 12px rgb(236 156 255);
+}
+
+@keyframes fondo-lava {
+    0% {
+        background-position: 0% 50%;
+    } 
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
