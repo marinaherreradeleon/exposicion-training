@@ -15,7 +15,7 @@ function App() {
     // Al abrir un tema, mostrar el titulo en position fixed 
     <>
       <Routes>
-        <Route path="/" exact element={<Indice marinitaHermosa={true}/>} />
+        <Route path="/" exact element={<Indice />} />
         <Route path="/event-y-event-loop" exact element={<Event/>} />
         <Route path="/promesas-y-fetch" exact element={<Promesas/>} />
         <Route path="/array-methods" exact element={<ArrayMethods/>} />
