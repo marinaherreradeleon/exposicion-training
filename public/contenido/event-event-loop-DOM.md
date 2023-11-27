@@ -6,23 +6,6 @@ Básicamente, es la forma en que el navegador organiza y estructura un documento
 
 ![Jerarquia](https://somospnt.com/images/blog/articulos/88-post-dom-virtual-2/DOM-arbol.png)
 
-Vamos a desglosar algunas de las ideas clave sobre el DOM:
-
-### 1. Estructura Jerárquica:
-
-El DOM organiza la estructura del documento en forma de un árbol jerárquico. En este árbol, cada elemento del documento, como etiquetas HTML (por ejemplo, <div>, <p>, <h1>) y sus atributos, es representado por un nodo.
-
-### 2. Nodos:
-
-Cada parte del documento es un nodo en el árbol DOM. Hay varios tipos de nodos, como nodos de elemento, nodos de texto, nodos de atributo, etc.
-
-### 3. Relación con HTML:
-
-El DOM refleja la estructura del documento HTML. Cada etiqueta HTML se convierte en un nodo en el DOM, y las relaciones entre las etiquetas (como la relación padre-hijo) se representan en la estructura del árbol.
-
-### 4. Acceso y Manipulación con JavaScript:
-
-JavaScript puede interactuar con el DOM para cambiar dinámicamente el contenido, estructura y estilo de una página web. Puedes seleccionar nodos, modificar su contenido, agregar o eliminar elementos, cambiar estilos y mucho más.
 
 ```javascript
 // Ejemplo: Cambiar el contenido de un elemento con JavaScript
