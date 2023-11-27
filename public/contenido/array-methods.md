@@ -1,9 +1,33 @@
 # Arrays
 
-Parte GON ARRAY
+En JavaScript, un array es uno de los tipos de datos más comúnmente utilizados. Almacena múltiples valores y elementos en una sola variable.
+
+Estos valores pueden ser de cualquier tipo de datos, lo que significa que puedes almacenar una cadena, un número, un booleano y otros tipos de datos en una variable.
+
+Hay dos formas estándar de declarar un array en JavaScript. Estas son a través del constructor de array o mediante la notación literal.
+
+En caso de que estés apurado, aquí tienes cómo se ve un array declarado de ambas maneras:
 
 ```javascript
+// Using array constructor
+let array = new array("John Doe", 24, true);
+
+// Using the literal notation
+let array = ["John Doe", 24, true];
 ```
+
+- Array length
+- Array toString()
+- Array pop()
+- Array push()
+- Array shift()
+- Array unshift()
+- Array join()
+- Array delete()
+- Array concat()
+- Array flat()
+- Array splice()
+- Array slice()
 
 # Functional Loops
 
