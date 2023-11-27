@@ -134,7 +134,6 @@ function ArrayMethods() {
      */
     return (
         <Pages>
-           <h1>Contenido de Arrays</h1>
            <Markdown value={markdown} renderer={renderer}/>
         </Pages>
     )

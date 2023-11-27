@@ -134,7 +134,6 @@ function Event() {
      */
     return (
         <Pages>
-           <h1>Contenido de la clase Event</h1>
            <Markdown value={markdown} renderer={renderer}/>
         </Pages>
     )

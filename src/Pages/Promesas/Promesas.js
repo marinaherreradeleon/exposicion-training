@@ -134,7 +134,6 @@ function Promesas() {
      */
     return (
         <Pages>
-           <h1>Contenido de la clase Promesa</h1>
            <Markdown value={markdown} renderer={renderer}/>
         </Pages>
     )
