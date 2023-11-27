@@ -30,8 +30,6 @@ let miParrafo = document.getElementById('miParrafo');
 miParrafo.innerHTML = '¡Hola, mundo!';
 ```
 
-El DOM es esencial para la programación web, ya que proporciona una interfaz estructurada y manipulable para que los scripts del lado del cliente (como JavaScript) interactúen con el contenido de una página web. 
-
 # Event Loop
 
 ## Engine de Javascript
@@ -76,7 +74,7 @@ En la Web API, hay un cronómetro que corre por el tiempo que le pasamos como se
 
 Esta parte puede ser confusa: no significa que la función de retorno (callback) se agregue a la pila de llamadas (y por ende devuelva un valor) después de 1000 milisegundos. ¡Solo se añade a la cola después de 1000 milisegundos! Pero es una cola, ¡la función tiene que esperar su turno!
 
-Ahora viene la partede que el buc le de eventos (event loop) haga su única tarea: conectar la cola con la pila de llamadas! Si la pila de llamadas está vacía, o sea, si todas las funciones previamente invocadas devolvieron sus valores y fueron sacadas de la pila, el primer elemento de la cola se agrega a la pila de llamadas. En este caso, no se invocaron otras funciones, lo que significa que la pila de llamadas estaba vacía en el momento en que la función de retorno era el primer elemento en la cola.
+Ahora viene la partede que el bucle de eventos (event loop) haga su única tarea: conectar la cola con la pila de llamadas! Si la pila de llamadas está vacía, o sea, si todas las funciones previamente invocadas devolvieron sus valores y fueron sacadas de la pila, el primer elemento de la cola se agrega a la pila de llamadas. En este caso, no se invocaron otras funciones, lo que significa que la pila de llamadas estaba vacía en el momento en que la función de retorno era el primer elemento en la cola.
 
 ![queue](https://res.cloudinary.com/practicaldev/image/fetch/s--OIG-_8dF--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_800/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif4.gif)
 
@@ -119,7 +117,6 @@ Veamos como funciona esto en el visualizador:
 Si en el event loop, al momento de agregar llamadas provenientes de la cola (queue) ya existen otras llamadas en la pila de llamadas (call stack), el event loop no agregará las llamadas de la cola a la pila de llamadas hasta que esta última esté vacía.
 
 El event loop siempre verifica primero si la pila de llamadas está vacía antes de mover una llamada de la cola a la pila. Si hay funciones en ejecución en la pila de llamadas, el event loop espera a que estas se completen y sean eliminadas de la pila. Solo después de que la pila de llamadas esté completamente vacía, el event loop tomará la primera llamada en la cola y la pasará a la pila de llamadas para su ejecución. Este proceso ayuda a asegurar una ejecución ordenada y evita el bloqueo de la interfaz de usuario, manteniendo la aplicación web rápida y receptiva.
-
 
 
 # Event
